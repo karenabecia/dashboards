@@ -3,48 +3,61 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboards Efeito UAU - Karen Abecia</title>
   <style>
     body {
-     margin: 0;
+      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('fundo1.png') no-repeat center center fixed;
+      background: url('bg.png') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
-      padding: 40px 20px;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.65);
+      z-index: 0;
+    }
+    h1, .subtitle, .gallery, .slide-box, .gallery img, .buttons {
+      position: relative;
+      z-index: 1;
     }
     h1 {
       text-align: center;
       color: #ffffff;
-      font-size: 2.8em;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+      font-size: 2.2em;
+      margin: 30px 0 10px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
     }
     .subtitle {
       text-align: center;
       color: #cfd;
-      font-size: 1.2em;
-      margin-bottom: 40px;
+      font-size: 1.1em;
+      margin-bottom: 30px;
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 25px;
-      max-width: 1600px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
       margin: auto;
+      padding: 0 20px;
     }
     .slide-box {
       position: relative;
       width: 100%;
-      padding-top: 56.25%; /* 16:9 ratio */
+      padding-top: 56.25%;
       background-color: #fff;
-      border-radius: 12px;
+      border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 10px 18px rgba(0,0,0,0.3);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
       transition: transform 0.5s ease, box-shadow 0.5s ease;
     }
     .slide-box:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
       box-shadow: 0 20px 35px rgba(0,255,128,0.35);
     }
     .slide-box img {
@@ -55,274 +68,92 @@
       height: 100%;
       object-fit: contain;
     }
+    .buttons {
+      text-align: center;
+      margin: 50px 20px 60px;
+    }
+    .buttons a button {
+      background-color: #217346;
+      color: white;
+      font-size: 1em;
+      padding: 14px 24px;
+      margin: 8px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .buttons a button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 24px rgba(0,255,128,0.4);
+    }
   </style>
 </head>
 <body>
   <h1>Dashboards Efeito UAU - Karen Abecia</h1>
-  <div class="subtitle">Visual poderoso, feito 100% em Excel</div>
+  <div class="subtitle">Feitos com Excel, apresentados com impacto</div>
   <div class="gallery">
+<div class="slide-box"><img src="slide_1.png" alt=""></div>
+<div class="slide-box"><img src="slide_2.png" alt=""></div>
+<div class="slide-box"><img src="slide_3.png" alt=""></div>
+<div class="slide-box"><img src="slide_4.png" alt=""></div>
+<div class="slide-box"><img src="slide_5.png" alt=""></div>
+<div class="slide-box"><img src="slide_6.png" alt=""></div>
+<div class="slide-box"><img src="slide_7.png" alt=""></div>
+<div class="slide-box"><img src="slide_8.png" alt=""></div>
+<div class="slide-box"><img src="slide_9.png" alt=""></div>
+<div class="slide-box"><img src="slide_10.png" alt=""></div>
+<div class="slide-box"><img src="slide_11.png" alt=""></div>
+<div class="slide-box"><img src="slide_12.png" alt=""></div>
+<div class="slide-box"><img src="slide_13.png" alt=""></div>
+<div class="slide-box"><img src="slide_14.png" alt=""></div>
+<div class="slide-box"><img src="slide_15.png" alt=""></div>
+<div class="slide-box"><img src="slide_16.png" alt=""></div>
+<div class="slide-box"><img src="slide_17.png" alt=""></div>
+<div class="slide-box"><img src="slide_18.png" alt=""></div>
+<div class="slide-box"><img src="slide_19.png" alt=""></div>
+<div class="slide-box"><img src="slide_20.png" alt=""></div>
+<div class="slide-box"><img src="slide_21.png" alt=""></div>
+<div class="slide-box"><img src="slide_22.png" alt=""></div>
+<div class="slide-box"><img src="slide_23.png" alt=""></div>
+<div class="slide-box"><img src="slide_24.png" alt=""></div>
+<div class="slide-box"><img src="slide_25.png" alt=""></div>
+<div class="slide-box"><img src="slide_26.png" alt=""></div>
+<div class="slide-box"><img src="slide_27.png" alt=""></div>
+<div class="slide-box"><img src="slide_28.png" alt=""></div>
+<div class="slide-box"><img src="slide_29.png" alt=""></div>
+<div class="slide-box"><img src="slide_30.png" alt=""></div>
+<div class="slide-box"><img src="slide_31.png" alt=""></div>
+<div class="slide-box"><img src="slide_32.png" alt=""></div>
+<div class="slide-box"><img src="slide_33.png" alt=""></div>
+<div class="slide-box"><img src="slide_34.png" alt=""></div>
+<div class="slide-box"><img src="slide_35.png" alt=""></div>
+<div class="slide-box"><img src="slide_36.png" alt=""></div>
+<div class="slide-box"><img src="slide_37.png" alt=""></div>
+<div class="slide-box"><img src="slide_38.png" alt=""></div>
+<div class="slide-box"><img src="slide_39.png" alt=""></div>
+<div class="slide-box"><img src="slide_40.png" alt=""></div>
+<div class="slide-box"><img src="slide_41.png" alt=""></div>
+<div class="slide-box"><img src="slide_42.png" alt=""></div>
+<div class="slide-box"><img src="slide_43.png" alt=""></div>
+<div class="slide-box"><img src="slide_44.png" alt=""></div>
+<div class="slide-box"><img src="slide_45.png" alt=""></div>
+<div class="slide-box"><img src="slide_46.png" alt=""></div>
+<div class="slide-box"><img src="slide_47.png" alt=""></div>
+<div class="slide-box"><img src="slide_48.png" alt=""></div>
 
-    <div class="slide-box">
-      <img src="slide_1.png" alt="slide_1.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_2.png" alt="slide_2.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_3.png" alt="slide_3.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_4.png" alt="slide_4.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_5.png" alt="slide_5.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_6.png" alt="slide_6.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_7.png" alt="slide_7.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_8.png" alt="slide_8.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_9.png" alt="slide_9.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_10.png" alt="slide_10.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_11.png" alt="slide_11.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_12.png" alt="slide_12.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_13.png" alt="slide_13.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_14.png" alt="slide_14.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_15.png" alt="slide_15.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_16.png" alt="slide_16.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_17.png" alt="slide_17.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_18.png" alt="slide_18.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_19.png" alt="slide_19.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_20.png" alt="slide_20.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_21.png" alt="slide_21.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_22.png" alt="slide_22.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_23.png" alt="slide_23.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_24.png" alt="slide_24.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_25.png" alt="slide_25.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_26.png" alt="slide_26.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_27.png" alt="slide_27.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_28.png" alt="slide_28.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_29.png" alt="slide_29.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_30.png" alt="slide_30.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_31.png" alt="slide_31.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_32.png" alt="slide_32.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_33.png" alt="slide_33.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_34.png" alt="slide_34.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_35.png" alt="slide_35.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_36.png" alt="slide_36.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_37.png" alt="slide_37.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_38.png" alt="slide_38.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_39.png" alt="slide_39.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_40.png" alt="slide_40.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_41.png" alt="slide_41.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_42.png" alt="slide_42.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_43.png" alt="slide_43.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_44.png" alt="slide_44.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_45.png" alt="slide_45.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_46.png" alt="slide_46.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_47.png" alt="slide_47.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_48.png" alt="slide_48.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_49.png" alt="slide_49.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_50.png" alt="slide_50.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_51.png" alt="slide_51.png">
-    </div>
-    
-    <div class="slide-box">
-      <img src="slide_52.png" alt="slide_52.png">
-    </div>
-    
   </div>
-
-  </div> <!-- fim da galeria -->
-  <div style="text-align: center; margin-top: 60px;">
-    <a href="https://pay.hotmart.com/G11430273J?checkoutMode=10&bid=1635519393322" target="_blank" style="text-decoration: none;">
-      <button style="
-        background-color: #217346;
-        color: white;
-        font-size: 1.1em;
-        padding: 15px 30px;
-        margin: 10px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        transition: transform 0.3s ease;
-      " onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
-        Quero aprender a criar Dashboards Efeito UAU
-      </button>
+  <div class="buttons">
+    <a href="https://pay.hotmart.com/G11430273J?checkoutMode=10&bid=1635519393322" target="_blank">
+      <button>Quero aprender a criar Dashboards Efeito UAU</button>
     </a>
-    <a href="https://wa.me/5511963269007?text=Gostaria%20de%20contratar%20algu%C3%A9m%20pra%20fazer%20um%20Dashboard%20Efeito%20UAU%20pra%20mim." target="_blank" style="text-decoration: none;">
-      <button style="
-        background-color: #217346;
-        color: white;
-        font-size: 1.1em;
-        padding: 15px 30px;
-        margin: 10px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        transition: transform 0.3s ease;
-      " onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
-        Quero contratar alguém pra fazer meu Dashboard
-      </button>
+    <a href="https://wa.me/5511963269007?text=Gostaria%20de%20contratar%20algu%C3%A9m%20pra%20fazer%20um%20Dashboard%20Efeito%20UAU%20pra%20mim." target="_blank">
+      <button>Quero contratar alguém pra fazer meu Dashboard</button>
     </a>
-    <a href="https://wa.me/5511963269007?text=Ol%C3%A1%2C%20gostaria%20de%20treinar%20a%20minha%20equipe%20para%20que%20eles%20aprendam%20a%20criar%20Dashboards%20em%20Excel." target="_blank" style="text-decoration: none;">
-      <button style="
-        background-color: #217346;
-        color: white;
-        font-size: 1.1em;
-        padding: 15px 30px;
-        margin: 10px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        transition: transform 0.3s ease;
-      " onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
-        Quero treinar minha equipe
-      </button>
+    <a href="https://wa.me/5511963269007?text=Ol%C3%A1%2C%20gostaria%20de%20treinar%20a%20minha%20equipe%20para%20que%20eles%20aprendam%20a%20criar%20Dashboards%20em%20Excel." target="_blank">
+      <button>Quero treinar minha equipe</button>
     </a>
   </div>
 </body>
 </html>
-
